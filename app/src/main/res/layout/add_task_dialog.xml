@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/text"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <EditText
+        android:id="@+id/task_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:hint="Task name"
+        android:lines="4"
+        android:padding="12dp" />
+
+    <TextView
+        android:id="@+id/task_estimate"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:lines="4"
+        android:padding="12dp"
+        android:visibility="visible"
+        android:text="Estimate Time"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <NumberPicker
+            android:id="@+id/hours_picker"
+            android:layout_width="80dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:text=":"
+            android:gravity="center"
+            android:textSize="25dp"/>
+
+        <NumberPicker
+            android:id="@+id/minutes_picker"
+            android:layout_width="80dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/bt_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="8dp"
+        android:text="Add" />
+
+</LinearLayout>
